@@ -122,9 +122,4 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-    
-    public function actionAutor()
-    {
-        return $this->render(autor);
-    }
 }
