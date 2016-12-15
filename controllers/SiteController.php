@@ -113,13 +113,8 @@ class SiteController extends Controller
         ]);
     }
 
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
+    public function actionAutor() {
+
+        return $this ->render('autor');
     }
 }

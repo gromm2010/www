@@ -1,16 +1,8 @@
-<?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of autor
- *
- * @author Серега
- */
-class autor {
-    //put your code here
-}
+<h1>МосСпецТранс</h1>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>4</li>
+    <li>3</li>
+    <li>5</li>
+</ul>
