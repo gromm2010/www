@@ -13,11 +13,7 @@ use yii\web\Controller;
 
 class MyController extends Controller
     {
-        public function actionIndex($id = null) {
-            $hi = 'Hello, world';
-            $names = ['ivanov','petrov','sidorov'];
-
-            if (!$id) $id = 'ififif';
-            return $this ->render('index', compact('hi', 'names', 'id'));
+        public function actionIndex() {
+           return $this->render('index');
         }
     }
