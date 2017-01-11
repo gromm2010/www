@@ -44,6 +44,18 @@
     .headCenter {
         width: 40%;
         float: left;
+        text-align: center;
+    }
+    .headCenter li {
+        list-style-type: none;
+        margin-top: 20px;
+    }
+    .headCenter li a{
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+        background: #ffb902;
+        border-radius: 5px;
     }
     .formEnter {
         width: 25%;
