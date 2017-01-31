@@ -6,6 +6,7 @@ $this->title = 'МосСпецТранс';
 ?>
 <div class="site-index">
 
+
     <div class="jumbotron">
         <h1>МосСпецТранс</h1>
 

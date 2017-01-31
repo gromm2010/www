@@ -1,1 +1,1 @@
-<h1> admin console</h1>
+<h1> Админка</h1>
