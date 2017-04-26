@@ -1,0 +1,45 @@
+.NameAdminCategori{
+
+}
+.AdminCategory{
+    background-color: #CCCCCC;
+    min-height: 50px;
+    margin-top: 10px;
+}
+.AdminCategory a{
+    color: #0033FF;
+    font-size: 2em;
+}
+.cart_product_img_admin{
+    width: 60px;
+    height: 60px;
+    float:left;
+
+
+}
+.cart_product_description_admin{
+    float: left;
+    width: 600px;
+
+}
+.cart_product_admin{
+
+
+}
+#table_category{
+    width: 100%;
+    border: 3px solid #333;
+    text-align: center;
+    background: #fff;
+}
+#table_category td {
+    border: 1px solid silver;
+}
+#table_category th {
+    border: 2px solid #333;
+    text-align: center;
+}
+.admin_container{
+    min-height: 600px;
+    background-color: #FFFFCC;
+}

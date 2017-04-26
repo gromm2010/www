@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 ?>
 <?php if (!empty($products)):?>
-    <div class="btl">
+    <div class="container-fluid">
 
             <h1><?=$products->name?></h1>
             <div class="full-date">Дата публикации: <?=$products->data?></div>
@@ -32,6 +32,7 @@ use yii\helpers\Html;
                 <p><span class="color">Адрес эл. почты:</span> связаться с арендодателем </p>
             <div class="clear"></div>
         </div>
+     </div>
     </div>
 <?php else :?>
     Товар не заполнен

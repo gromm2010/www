@@ -12,6 +12,9 @@ use yii\db\ActiveRecord;
 
 class Category extends ActiveRecord
 {
+    /**
+     * Обьявляем название таблицы
+     */
     public static function tableName()
     {
         return 'category';
@@ -21,4 +24,8 @@ class Category extends ActiveRecord
     {
         return $this -> hasManu(Products::className(), [`id_category` => `id`]);
     }
+//    public function Random(){
+//        $random = array();
+//        for
+//    }
 }

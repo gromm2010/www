@@ -2,12 +2,18 @@
 
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 
-    .conteiner {
-        width: 1400px;
-        min-height: 600px;
+    .container {
         margin: 0 auto;
-
+        background-color: #FFFFCC;
+    }
+    .container-fluid{
+        background-color: #FFCC00;
     }
     h1 {
         font-family:"Monotype Corsivaб";
@@ -19,7 +25,7 @@
 
     }
     footer {
-        width: 1400px;
+
         height: 50px;
         background-color: #ffb902;
         text-align: center;
@@ -29,36 +35,33 @@
         text-decoration: none;
     }
     .head {
-        min-height: 150px;
+        min-height: 200px;
         margin-bottom: 5px;
+        background: url("images/header.jpg");
     }
     .logoName {
-        width: 25%;
+        width: 400px;
         float: left;
         padding-bottom: 5px;
     }
+    .logoName img{
+        background-color: #CCCC00;
+        border-radius: 10px;
+        border: 2px solid #ffb902;
+        width: 80%;
+        margin-top: 50px;
+        margin-left: 50px;
+
+    }
     .headCenter {
-        width: 40%;
+        width: 300px;
+        height: 200px;
         float: left;
         text-align: center;
     }
-    .headCenter li {
-        list-style-type: none;
-        margin-top: 20px;
-    }
-    .headCenter li a{
-        font-style: italic;
-        font-weight: bold;
-        font-size: 18px;
-        background: #ffb902;
-        border-radius: 5px;
-    }
-    .headCenter li a:hover{
-        border: 2px solid #003559;
-    }
-    .formEnter {
-        width: 25%;
-        float: left;
+    .content{
+        width: 80%;
+        margin-right: 30px;
     }
     table{
     margin-top: 10px;
@@ -94,7 +97,7 @@
     .topmenu {
         backface-visibility: hidden;
         position: relative;
-        background: #ffb902;
+        background: url(../images/tooplate_top.png) repeat-x top;
     }
     .topmenu:before, .topmenu:after {
         content: "";
@@ -160,27 +163,22 @@
     .clear {
         clear: both;
     }
-    .leftBox {
-        min-height: 300px;
-        width: 25%;
-        float: left;
-        border: 1px solid #7f7f7f;
-        border-radius: 5px;
-        margin: 10px;
-    }
-    .leftBox img {
-        width: 100%;
-        height: 100%;
-    }
+
     .centrBox {
+        border: 1px solid #ffb902;
+        border-radius: 5px;
+
+    }
+    .centrBoxAdmin{
         min-height: 300px;
-        width: 70%;
+        width: 100%;
         float: left;
         border: 1px solid #ffb902;
         border-radius: 5px;
         margin: 10px;
     }
     .centrBoxText{
+        font-family: "Lucida Sans Unicode",Helvetica,Arial,sans-serif;
         padding: 20px;
     }
     .centrBoxText li{
@@ -191,9 +189,10 @@
         float: left;
         width: 150px;
         height: 200px;
-        margin: 20px;
+        margin: 10px;
         border-radius: 5px;
         box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+        background-color: #fff;
     }
     .categorii:hover{
         border: 2px solid #ffb902;
@@ -222,7 +221,7 @@
         margin: 10px;
     }
     .cart_product_description{
-        width: 70%;
+        width: 420px;
         float: left;
     }
     .cart_product_img{
@@ -248,4 +247,86 @@
     }
     h2 {
        color: #ffb902;
+    }
+    aside{
+        border: 1px solid #ffb902;
+        border-radius: 5px;
+    }
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 767px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+        .centrBox{
+            width: 460px;
+        }
+        aside{
+            float: none;
+            width: 460px;background-color: #46b8da;
+        }
+        @media only screen and (max-width : 320px) {
+            body{
+               width:320px;
+            }
+            .header{
+                width: 310px;
+            }
+            .head {
+                width: 100%;
+                height: 65px;
+            }
+            .logoName{
+                width: 100%;
+                height: 50px;
+            }
+            .logoName img{
+                width: 97%;
+                height: auto;
+                margin: 0 auto;
+            }
+            .centrBox{
+                width: 300px;
+                margin: 0 auto;
+            }
+            aside{
+                background-color: #953b39;
+            }
+            .categorii{
+                background-color: #fff;
+                width: 260px;
+                height: 150px;
+                margin: 0 auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 5px;
+            }
+            .ImgCategori{
+                margin-left: 30px;
+            }
+            .NameCategori{
+                height: 20px;
+            }
+            .headCenter{
+                display: none;
+            }
+        }
+        #enterButton{
+            float: right;
+            padding-top: 20px;
+        }
+        #header{
+            float: right;
+        }
     }

@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use yii\helpers\Url;
 ?>
     <div class="centrBoxText"> <p>МосСпецТранс – это  портал, где встречаются арендаторы и владельцы спецтехники широкого профиля.
             На этой площадке частные лица и компании   дают объявления о  найме спецтехники, позволяющем успешно решать задачи в сфере строительства,
@@ -7,14 +8,17 @@ use yii\helpers\Html;
             мы поможем вам подобрать наиболее оптимальные решения и разместить интересные предложения.</p>
     </div>
 <div class="centrBoxText">
+
     <h2>Востребованные единицы</h2>
 </div>
 <?php if (!empty($category)):?>
     <?php foreach ($category as $categori):?>
+        <a href="<?= Url::to(['category/view', 'id' => $categori->id])?>">
         <div class="categorii">
-            <div class="NameCategori"><a href="<?= \yii\helpers\Url::to(['category/view', 'id' => $categori->id])?>"><?= $categori ->name?></a></div>
+            <div class="NameCategori"><?= $categori ->name?></div>
             <div class="ImgCategori"><?= Html::img("@web/images/$categori->img", ['alt' =>$categori->name])?></div>
         </div>
+        </a>
     <?php endforeach; ?>
 <?php else:?>
     Категорий не найдено

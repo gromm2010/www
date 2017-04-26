@@ -8,6 +8,12 @@ $config = [
     'bootstrap' => ['log'],
     'language' => 'ru=Ru',
     'defaultRoute' => 'category/index',
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'layout' => 'admin',
+        ],
+    ],
         'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -31,6 +37,7 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -45,6 +52,7 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => false,
             'rules' => [
                'category/<id:\d+>' => 'cstegory/view',
                 'product/<id:\d+>' => 'product/view',
